@@ -1,6 +1,6 @@
 /*!
  * jQuery Simple Share
- * Very simple (extensible) sharing buttons boilerplate for developers, supports: Facebook, Twitter, Google+ and Linkedin.
+ * Very simple (extensiable) sharing buttons boilerplate for developers, supports: Facebook, Twitter, Google+ and Linkedin.
  * version 1.0, March 13th, 2014
  * by Ammar Alakkad - http://aalakkad.github.io
  * https://github.com/AAlakkad/jQuery-Smpl-Share
@@ -60,11 +60,11 @@
 		plugin.init = function () {
 			plugin.settings = $.extend({}, defaults, options);
 
-			plugin.settings.url = $element.data('url') != "" ? $element.data('url') : plugin.settings.url;
-			plugin.settings.text = $element.data('text') != "" ? $element.data('text') : plugin.settings.text;
-			plugin.settings.via = $element.data('via') != "" ? $element.data('via') : plugin.settings.url;
-			plugin.settings.lang = $element.data('lang') != "" ? $element.data('lang') : plugin.settings.url;
-
+			plugin.settings.url = $element.data('url') ? $element.data('url') : plugin.settings.url;
+			plugin.settings.text = $element.data('text') ? $element.data('text') : plugin.settings.text;
+			plugin.settings.via = $element.data('via') ? $element.data('via') : plugin.settings.via;
+			plugin.settings.lang = $element.data('lang') ? $element.data('lang') : plugin.settings.lang;
+			
 			// If no url available, get the current url
 			if (!plugin.settings.url)
 				plugin.settings.url = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
