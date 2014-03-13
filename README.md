@@ -1,4 +1,4 @@
 jQuery-Smpl-Share
 =================
 
-Very simple (yet extendable) jQuery plugin for sharing, supports: Facebook, Twitter, Google+ and Linkedin.
+Very simple (extensiable) sharing buttons boilerplate for developers, supports: Facebook, Twitter, Google+ and Linkedin.

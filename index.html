@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>jQuery Smpl Share</title>
+    <meta name="author" content="Ammar Alakkad">
+    <meta name="description"
+          content="Very simple (extensiable) sharing buttons boilerplate for developers, supports: Facebook, Twitter, Google+ and Linkedin.">
+    <meta name="keywords"
+          content="jQuery, Simple, Sharing, Share Buttons, Facebook, Twitter, Google, Google+, GooglePlus, Linkedin">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="smpl-share.css"/>
+    <style>
+        body {
+            background: #f0f0f0;
+            padding: 0;
+            margin: 0;
+            font-family: "Open Sans", Arial, Sans;
+            margin-top: 10%;
+        }
+
+        h1 {
+            color: #337;
+        }
+
+        .smpl-share {
+            width: 165px;
+            margin: 0 auto;
+        }
+
+        .item {
+            float: left;
+            margin-right: 15px;
+        }
+
+        .item:last-child {
+            margin-right: 0;
+        }
+    </style>
+
+</head>
+<body>
+<h1 align="center">Smpl Share</h1>
+
+<div class="smpl-share"
+     data-text="Very simple (extensiable) sharing buttons boilerplate for developers, supports: Facebook, Twitter, Google+ and Linkedin."
+     data-via="Am_Alakkad">
+
+    <div class="facebook item"></div>
+    <div class="twitter item"></div>
+    <div class="googleplus item"></div>
+    <div class="linkedin item"></div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="smpl-share.js"></script>
+<script>
+    $(".smpl-share").smplShare({
+        services: ['twitter', 'facebook', 'googleplus', 'linkedin']
+    });
+</script>
+
+</body>
+</html>
