@@ -1,6 +1,6 @@
 /*!
  * jQuery Simple Share
- * Very simple (extensiable) sharing buttons boilerplate for developers, supports: Facebook, Twitter, Google+ and Linkedin.
+ * Very simple (extensible) sharing buttons boilerplate for developers, supports: Facebook, Twitter, Google+ and Linkedin.
  * version 1.0, March 13th, 2014
  * by Ammar Alakkad - http://aalakkad.github.io
  * https://github.com/AAlakkad/jQuery-Smpl-Share
